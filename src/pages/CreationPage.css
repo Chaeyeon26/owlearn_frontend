@@ -1,0 +1,75 @@
+.creation-page {
+  background-color: #dddddd;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 🔥 이거 추가해서 세로 가운데 정렬 */
+  font-family: 'HakgyoansimGeurimilgi', sans-serif;
+  position: relative;
+  padding-top: 0px; /* 위 공간 확보 */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ← 모든 자식 요소를 가로 중앙 정렬 */
+  justify-content: center;
+  text-align: center;
+  margin-top: -120px;
+}
+
+.message {
+  font-size: 30px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.owl-image {
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #feefc4;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.start-button {
+  padding: 14px 56px;
+  font-size: 20px;
+  background-color: #869b73;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+}
+
+/*.start-button {
+  padding: 12px 28px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  background-color: #869b73;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  min-width: 150px;
+  max-width: 200px;
+  margin: 0 auto;
+}*/
+
