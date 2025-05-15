@@ -1,0 +1,29 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./component/header";
+import StartPage from "./pages/StartPage";
+import LoginPage from "./pages/LoginPage";
+import Diagnosis from "./pages/DiagnosisPage";
+import StudyMain from "./pages/studyMain";
+import StudyProgress from "./pages/studyProgress";
+import Quiz from "./pages/quiz";
+import QuizAnswer from "./pages/quizAnswer";
+
+function App() {
+  return (
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<StartPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/diagnosis" element={<Diagnosis />} />
+        <Route path="/studyMain" element={<StudyMain />} />
+        <Route path="/tale/study" element={<StudyProgress />} />
+        <Route path="/tale/quiz" element={<Quiz />} />
+        <Route path="/tale/quiz/answer" element={<QuizAnswer />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
